@@ -62,7 +62,7 @@
 <div class="highlight-haskell notranslate"><div class="highlight"><pre><span></span><span class="c1">-- file: ch12/Barcode.hs</span>
 <span class="nf">checkDigit</span> <span class="ow">::</span> <span class="p">(</span><span class="kt">Integral</span> <span class="n">a</span><span class="p">)</span> <span class="ow">=&gt;</span> <span class="p">[</span><span class="n">a</span><span class="p">]</span> <span class="ow">-&gt;</span> <span class="n">a</span>
 <span class="nf">checkDigit</span> <span class="n">ds</span> <span class="ow">=</span> <span class="n">productSum</span> <span class="p">`</span><span class="n">mod</span><span class="p">`</span> <span class="mi">10</span> <span class="p">`</span><span class="n">mod</span><span class="p">`</span> <span class="mi">10</span>
-    <span class="kr">where</span> <span class="n">productSum</span> <span class="ow">=</span> <span class="n">sum</span> <span class="n">products</span> <span class="p">(</span><span class="n">mapEveryOther</span> <span class="p">(</span><span class="o">*</span><span class="mi">3</span><span class="p">)</span> <span class="p">(</span><span class="n">reverse</span> <span class="n">ds</span><span class="p">))</span>
+    <span class="kr">where</span> <span class="n">productSum</span> <span class="ow">=</span> <span class="n">sum</span> <span class="p">(</span><span class="n">mapEveryOther</span> <span class="p">(</span><span class="o">*</span><span class="mi">3</span><span class="p">)</span> <span class="p">(</span><span class="n">reverse</span> <span class="n">ds</span><span class="p">))</span>
 
 <span class="nf">mapEveryOther</span> <span class="ow">::</span> <span class="p">(</span><span class="n">a</span> <span class="ow">-&gt;</span> <span class="n">a</span><span class="p">)</span> <span class="ow">-&gt;</span> <span class="p">[</span><span class="n">a</span><span class="p">]</span> <span class="ow">-&gt;</span> <span class="p">[</span><span class="n">a</span><span class="p">]</span>
 <span class="nf">mapEveryOther</span> <span class="n">f</span> <span class="ow">=</span> <span class="n">zipWith</span> <span class="p">(</span><span class="o">$</span><span class="p">)</span> <span class="p">(</span><span class="n">cycle</span> <span class="p">[</span><span class="n">f</span><span class="p">,</span><span class="n">id</span><span class="p">])</span>
@@ -959,7 +959,7 @@ ghci&gt; mapM_ print $ candidateDigits input
 </div>
 
 
-        <div class="section" id="discuss">
+        <!--<div class="section" id="discuss">
     <h2>
         讨论
         <a class="headerlink" href="#discuss" title="永久链接至标题">¶</a>
@@ -978,7 +978,7 @@ ghci&gt; mapM_ print $ candidateDigits input
     </script>
     <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-</div>
+</div>-->
       </div>
       <div class="bottomnav">
       

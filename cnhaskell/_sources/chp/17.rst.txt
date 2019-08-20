@@ -12,7 +12,7 @@
 绑定系统需要仔细的调整两种语言的语义,以便让两种语言都能理解他们之间传递的数据。
 
 对于 Haskell, 这个技术栈由 Haskell 报告外部函数接口附录(\ `the Foreign Function Interface addendum <http://www.cse.unsw.edu.au/~chak/haskell/ffi>`_\)所指定。
-FFI报告描述了如何正确的将Haskell和 C 语言绑定到一起，以及如何把绑定扩展到其他语言.该标准旨在实现可移植性, 因此 FFI 绑定可以在不同的 Haskell 实现，操作系统，C编译器上都可靠的工作。
+FFI报告描述了如何正确的将 Haskell 和 C 语言绑定到一起，以及如何把绑定扩展到其他语言.该标准旨在实现可移植性, 因此 FFI 绑定可以在不同的 Haskell 实现，操作系统，C编译器上都可靠的工作。
 
 所有 Haskell 的实现都支持FFI,并且在 Haskell 在新领域使用的时候这是一个关键技术。
 我们只需要绑定到 Haskell 以外的语言所编写的现有库，而不是去重新实现域中的标准库。
